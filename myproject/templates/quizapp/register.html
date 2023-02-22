@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <title>Register</title>
+    </head>
+    <body class="">
+     <div class="container-fluid, text-center">
+        <h1>Register</h1>
+        <form action="register" method="post" style="align-content: center;">
+          {% csrf_token %}
+            <div style="align-content: center;">
+            <label>User Id</label>
+            <input type="text" name="User Id"><br><br>
+            <label>First name</label>
+            <input type="tex" name="First name"><br><br>
+            <label>Last name</label>
+            <input type="text" name="Last name"><br><br>
+            <label>Phone number</label>
+            <input type="number" name="Phone number"><br><br>
+            <label>email id</label>
+            <input type="email" name="email id"><br><br>
+            <label>password</label>
+            <input type="password" name="password"><br><br>
+            <input type="submit">
+            </div>
+            <br><br>
+
+        </form>
+     </div>
+    </body>
+</html>
